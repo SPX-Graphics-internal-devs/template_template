@@ -1,0 +1,51 @@
+<script type="text/javascript">
+  window.SPXGCTemplateDefinition = {
+    defversion: "1",
+    description: "Template",
+    playserver: "OVERLAY",
+    playchannel: "1",
+    playlayer: "14",
+    webplayout: "14",
+    steps: "1",
+    out: "manual",
+    uicolor: "3",
+    dataformat: "json",
+    DataFields: [
+      {
+        ftype: "instruction",
+        value:
+          "This diplays a QR code. You can add the url address of a website for the QR code. The second line is optional for the title text.",
+      },
+      {
+        field: "f0",
+        ftype: "textfield",
+        title: "Text input",
+        value: "hello world!",
+      },
+      {
+        field: "f1",
+        ftype: "dropdown",
+        title: "Position",
+        value: "bottom left",
+        items: [
+          {
+            text: "Top Left",
+            value: "top left",
+          },
+          {
+            text: "Top Right",
+            value: "top right",
+          },
+          {
+            text: "Bottom Left",
+            value: "bottom left",
+          },
+          {
+            text: "Bottom Right",
+            value: "bottom right",
+          },
+        ],
+      },
+    ],
+  }; // Definition ended
+</script>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <!--
+      
+        ##-project-description-##
+        ▸ spx.graphics | Copyright 2020-2023 Softpix
+
+        Version: ##-version-## / ##-comment-##
+        Build: ##-builddate-## 
+
+        ##-minifyinfo-##
+
+        ---------------------------------------
+        Change history:
+
+
+    -->
+
+    <title>SPX Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="./js/spx_interface.js"></script>
+    <script type="text/javascript" src="./js/lib/anime.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/template.css" />
+    @@include('./snippet-html/SPXGCTemplateDefinition.html')
+</head>
+
+<body>
+    <div class="SPXWindow">
+        <div id="gfx">
+            <div id="div"></div>
+        </div>
+    </div>
+    
+    <!-- ******************************************************************** -->
+    <table id="SPXdataFields" data-dev-reminder="Visibility the css">
+        <tr><td class="datahead" colspan="2"><B>SPX Data</B></td></tr>
+        <tr><td>Text ................ </td><td id="f0"></td></tr>
+        <tr><td>Position ................ </td><td id="f1"></td></tr>
+        <tr><td>Epoch ID ................. </td><td id="epochID"></td></tr>
+    </table>
+    <!-- ******************************************************************** -->
+
+    <script>
+
+        function runTemplateUpdate(msg) {
+           runAnimationIN()
+        }
+
+        function runAnimationIN() {
+            anime({
+                targets: '#gfx',
+                opacity: [0, 1],
+                duration: 200,
+                easing: 'easeOutQuart'
+            });
+        }
+
+        function runAnimationOUT() {
+            anime({
+                targets: '#gfx',
+                opacity: [1, 0],
+                duration: 200,
+                easing: 'easeOutQuart'
+            });
+        }
+
+    </script>
+</body>
+</html>

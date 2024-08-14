@@ -1,0 +1,40 @@
+*, *:after, *:before {  -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+html, body {
+    margin: 0; 
+    padding: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+.SPXWindow {
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden; 
+    position: absolute; 
+    opacity: 1; 
+    border: 0px solid orange;
+}
+
+:root {
+    --color-accent:     #ffa500;
+    --color-background: #ffffff;
+    --color-text:       #000000;
+    --content-align:    flex-start;
+    --content-valign:   flex-start;
+    --text-align:       center;
+    --border-radius:    0.5vw;
+    --main-padding:     3vw;
+}
+
+@font-face { font-family: "SEMI"; src: url( '../fonts/Poppins-SemiBold.ttf' ); }
+@font-face { font-family: "REGU"; src: url( '../fonts/Poppins-Regular.ttf'  ); }
+@font-face { font-family: "BOLD"; src: url( '../fonts/Poppins-Bold.ttf'  ); }
+
+
+#SPXdataFields {                opacity: 0; top: 50%; left: 50%; width: 70%; padding: 1em; margin: 20px; font-size: 2em; line-height: 1.4em; position: absolute;  border-radius: 0.5em; font-family: monospace; border: 1px solid black; color: rgb(102, 102, 102); transform: translate(-50%,-50%); background: rgba(0, 0, 0, 0.7); }
+#SPXdataFields td {             max-width: 300px; overflow: hidden; white-space: nowrap; }
+#SPXdataFields td[id]{          width: 65%; color: rgb(149, 234, 255); padding: 0.1em 0.5em; background-color: rgba(2, 21, 36, 0.9); }
+#SPXdataFields td.datahead {    padding: 0.3em 0; text-align: center; color: rgb(255, 255, 255); text-shadow: 4px 4px 6px black; background-color: rgb(14, 91, 155); }

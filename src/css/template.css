@@ -1,0 +1,53 @@
+/* Square aspect ratio*/
+@media (aspect-ratio: 1/1) {
+    #gfx {
+        background-color: lightcoral;
+    }
+
+    #strap{
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+/* Vertical phone aspect ratio*/
+@media (max-aspect-ratio: 0.999/1) {
+    #gfx {
+        background-color: lightgreen;
+    }
+    #strap{
+        top: 10vh;
+        right: 0;
+        width: 50%;
+    }
+}
+/* Regular screen aspect ratio */
+@media (min-aspect-ratio: 1.001/1) {
+    #gfx {
+        background-color: lightblue;
+    }
+    #strap{
+        bottom: 5vh;
+        width: 50%;
+    }
+}
+
+
+
+#gfx {
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+#div{
+    position: absolute;
+    height: 10vh;
+    background: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
